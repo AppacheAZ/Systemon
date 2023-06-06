@@ -27,7 +27,7 @@ function initGame() {
 
     
 
-    // Atacks && Defenses
+    // Atacks && Defenses buttons and functions
     let button_atack1 = document.getElementById("button_atack1");
     button_atack1.addEventListener("click", function() {atack(monPlayer, "attack1"); })
 
@@ -87,6 +87,7 @@ function atack (monPlayer, atackType) {
 }
 
 function getAttackFunction(monPlayer, attackType) {
+    // return the function that corresponds to the attackType of the monPlayer
     const alienAttacks = {
     Mercury: {
         attack1: blazeBall("nameAtack"),
